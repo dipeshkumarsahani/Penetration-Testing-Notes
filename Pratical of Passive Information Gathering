@@ -1,0 +1,108 @@
+Pratical of Passive Information Gathering
+
+If you have only Domain of website then, find 
+IP address of that website
+• Finding IP address information:
+
+Command tool
+1. host 
+┌──(dipesh㉿kali)-[~]
+└─$ host google.com
+google.com has address 142.250.183.78
+google.com has IPv6 address 2404:6800:4007:81d::200e
+google.com mail is handled by 10 smtp.google.com.
+
+2. robots.txt
+See information of robots.txt if you have domain
+https://www.google.com/robots.txt
+
+3. xml sitemap
+See information of sitemap 
+https://www.google.com/sitemap.xml
+
+whois information
+search form search engine:
+      1. https://mxtoolbox.com/whois.aspx
+      2. Or search whois lookup / whois imformation in search engine, it will show results visit any website 
+
+command tool:
+whois
+┌──(dipesh㉿kali)-[~]
+└─$ whois google.com                              
+   Domain Name: GOOGLE.COM
+   Registry Domain ID: 2138514_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.markmonitor.com
+   Registrar URL: http://www.markmonitor.com
+   Updated Date: 2019-09-09T15:39:04Z
+   Creation Date: 1997-09-15T04:00:00Z
+   Registry Expiry Date: 2028-09-14T04:00:00Z
+...........................................
+
+Google Dorking
+search form search engine, list of google dorking  and use to find sensitive information 
+We can also use goole hacking database
+
+
+
+
+Netcraft 
+It provides a lot of information about an website.
+• Background information like:- Site tittle, site rank, Date fist seen, Primary Language on website etc.
+• Network infomation like:- Domain, IP address, Name Server, TLD's information etc.
+• SSL/TLS certificate information
+• Certificate Transparency information
+• Information regarding this site is vulnerable to any SSL/TLS related information
+• Site technology information etc.
+Note:- similiar information we will get like whois 
+
+
+Shodan
+Footprinting with shodan search engine
+• Shodan is a search engine on which we can see all the devices which are connected on the internet.
+• Devices means printer, refrigerators, computers, routers, modern, servers, etc. which are connected to the internet.
+• It is different form search engines like Google and Bing because google and bing are great for finding websites but Sodan crawls all the devices and stores the result on its database.
+• Shodan gathers information by interacting with web services and this infomation is stored in an object called the banner, so when you search and anything using a shodan dork (search query) shodan takes the information form the banner of that service and displays it to you. In simple words banner is a metadata.
+• So as a penetration tester, we can use a specific shodan queries/ filters to get the information about those particular devices, which have been indexed by shodan.
+It has two versions:
+• Web based
+• CLI based
+
+Shodomain
+It is github tool which is used to find subdomain
+
+Certificate transparancy 
+web tool crt.sh
+• As s penetration tester we will use this tool to find subdomains
+CLI tool  1N3/crt.sh--this is script to find subdomain and save in a file, copy script from github and save to exexute script
+
+Censys
+similar as shodan, censys is paid tool but we will get 250 quory at free login.
+• To get more quory use fake email to register 
+
+Pentest-tools.com
+• we can find more information like:- subdomain, openport, etc.
+• serve this tools before use it to understand this tool
+
+virustotal
+• Virustotal is used to find many information, but we use to find subdomain.
+
+sublist3r
+• A subdomain finder tool, we can download from github using git clone.
+• Or we can install it by CLI sudo apt install sublist3r
+
+chaos.projectdiscovery
+https://chaos.projectdiscovery.io/
+• It scan the target which in bugbounty list, this porject it self scan to find which new subdomain added 
+• we can download bunch of subdomains form here
+CLI tool chaospy found in github
+https://github.com/zorox0x/chaospy
+
+
+archive.org
+• wayback machine
+• waybackurl github, used to download urls  from CLI of target, direct on system
+• We will use to find information, of target URLs
+
+
+ 
+

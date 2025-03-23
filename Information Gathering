@@ -1,0 +1,36 @@
+Information Gathering
+
+• This is the first step of any penetration testing or ethical hacking.
+• It involves gathering or collection of information about an individual, company, website or system that you are targeting.
+
+
+For Example:-
+Any company is hired you to perform a penetration testing on their website. so, during the first phase of penetration testing, 
+which information you gather?  what is your objectives?
+ 
+Our objective is to learn more about the website on which you are performing penetration testing, means: 
+• We need to identify what is web technology is being used on the website.(eg:- html, css, php, etc..)
+• We need to identify any vulnerabilities that websites have.
+• We need to know more about IP  Address of the server that's hosting that website.
+So from that information we are getting a better understanding of the website that we are targeting.
+
+
+For example you have been contracted to perform a penetration test fo a company and that have you given a scope that you can target a few pyblic facing assets like webserver & couple of internal systems within the internal netwok.
+• 			And you may gain  access to the internal nwtwork through publicly facing assets like server that may be one attack vector
+• 			Or alternativley during the information gathering step - we find out the employee that working for that company.
+
+This is most important piece of information - in this context would be identify their named and their emails.
+Why it's so important? Because instead of exploiting the web server in order to gain access to their internal network through pivot is easy.
+We perform a phishing attack or send a malicious attachment to one of the employee cia email. That could provide access to their internal network.
+
+ 
+•  The more information you have on your target, the more successful you will be during the latter stages of a penetration test.
+• Information  gathering is broken down into two types:-
+            1. Passive Information gathering
+            2. Active information gathering
+
+For example from passive information gathering phase, we identified the IP address of the web server.
+So, in active information  gathering phase. we can start performing a port scan of on that IP address to identify the open ports 
+and their respective services that are running on the ports
+
+And we can use that information to indentify vulnerabilities that can be exploited 

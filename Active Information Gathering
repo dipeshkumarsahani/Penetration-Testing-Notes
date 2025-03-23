@@ -1,0 +1,113 @@
+	Active Information Gathering
+
+Active Information Gathering:-  It involves gathering as much information as possible by actively engaging with the target. For that you will require authorization in order to perform active information gathering.
+
+What types of information are you looking for?
+• Discovering open ports
+• Internal network infrastructure of a target network
+• More enumeration on target
+
+
+1. Based on the previous knowledge of information gathering more specifically passive information gathering
+2. Nest step is to cover active information gathering, what do i means that?
+3. For example - if you are doing a standard pentesting on an internal network of a company or during information gathering you have an idea of network infrastructure of a company.
+4. Then what will be your objective? - To identif what hosts exists on the network ? And then from that point, you move on to perform a port scan on those active hosts & try to identify the operating systems information, service running on the open port etc.
+5. So, first of all we need to learn how to identify what hosts are actice on a network? And from that point we need to learn how to identify which ports are opens on those active hosts? What service are running ? What OS they are running?
+
+
+For that imformation we need ot cover the following topics:
+• Network fundamentals
+• Network Mapping of hosts
+• Host Discovery
+• Port scanning
+• Host fingerpringting
+• Introduction to NSE (Nmap scripting Engine)
+• FIrewall detection & Evasion
+• Scan timing & performace
+
+
+There are plenty of port scanner or host discovery tools are avilable which are doing the same things. So why we are limiting to Nmap?
+• Its been tried and tested. And still preferred tool by pen testers, red teamers, adversaries, network engineers etc.
+• Its prevalence within the industry. Its used by everyone either offensive or defensive side
+
+
+Active Information Gathering
+• Active Information Gathering is the phase of assessment where all the attackers/pen testers or ethical hackers actively enteracts with target or network to collect data and to identify potential vulnerabilities.
+•This phase invloves techniques that go behind passive information gathering and includes the activities such as scanning, probing and direct interaction with the network services that are running on a particular host with a network.
+
+
+
+1. Network Mapping
+• Now we have  the Knowledge of fundamentals of Networking Specifically network and transport Layer.
+• In this section we are going to be exploring the process of host discovery.
+• Host discovery is the part of network mapping. Within the network mappping we have a plenty of techniques or tasks that performed and one of them is host discovery.
+• After collecting information about a target organization during the passive information gathering stage, a pentester move on to active information gathering phase which involves discovering host on a network, performaing port scanning and enumeration.
+• As we know, every host is connected to the internal or private network and must have a unique IP address that uniquely identifies it on social networks.
+• In certain case this IP address could be static or dynamic.
+• Now our main objective is focusing n the porcess of identifying all hosts online or currently active.
+• How can a penetration tester deterrmine what hosts, within an in-scope network are online? What ports are open on the active hosts? & What OS are running on the active hosts?
+[ THROUGHOUT NETWORK MAPPING ]
+• It refers to the process of discovering and identifying devices, hosts and network infrastructure elements within a target network.
+• Pentester use network mapping as important initial step to gather information about the network's layout, understand its architecture and identifying potential entry points for further exploitation
+• For example - as a penetration tester, let's say you work for a company and company say that you are allowed to pentest a particular domain or IP range
+• If it's black box pentesting, then company will not told anything about the network with regards to how many systems are within the network or subnet.
+• So your first order of business it to try and map out what hosts are online within that particular IP range and secondly try to build even a very basec network topology you are particular IP range and secondly try to build even a very basic network topology you are dealing with.
+
+Why we need to map a network?
+• We need a way to map out an unknown network into something more useful. We don't know anything about the target network, the objective is to develop a picture of the network architecture and the system that make up the network as a whole.
+• And network mapping allows us to get a better understanding of what we are dealing with in terms of how many systems exists within their network and their potential functional role.
+
+Network Mapping Objective:
+• Discovery of live hosts 
+• Identifying of open ports and services
+• Network topology mapping
+• Operating system fingerprinting
+• Service Version detection 
+• Identifying filtering and security measures
+
+Nmap (Network Mapper)
+• It is an open source Network scanning tool used for discovering hosts and services on a computer network, finding open poets and identifying potential vulnerabilities.
+• It is a powerful tool that has become a standard in the toolkit of security professionals, network administrators and penetration tester.
+• It offers a range of features and functionalities that make it a valuable tool in verious network security contexts.
+
+Nmap Functionality:
+• Host Discovery
+• Port scanning
+• Service version detection 
+• Operating System fingerprinting
+• Identifying filtering and security measures
+
+Host Discovery  Techniques
+• First of all we need to have an understanding of some of the most common and most and most widely used host discovery techniques.
+• And we also take a look at how this has been done historically in the context of penetration testing or auditing a network either for purpose of performance or security.
+
+Host Discovery:
+• In Ethcal Hacking or penetration testing, this is very crucial phase to identify live hosts on a network before further exploration and vulnerability assessment.
+• Various of techniques can be emploued for hosts disscovery and the choice of techniques depends on the factors such as network characteristics, stealth requirements and the goal of the penetration tests.
+• When we talk anout host discovery techniques, among the most popular techniques are listed below:
+
+Host Discovery Popular techniques
+Ping Sweeps:
+• Ping sweeps is the process of sending ICMP echo requests that essentially allow you to utilize ICMP protocol to see if a host is online. We can also perform this on an entire subnet using ping utility on windows, Mac and Linux.
+• In some cases you will see that ping sweeps or ping techniques, if you will utilizes ICMP echo requests doesn't work for some OS in certain cases.
+• Specifically in the case of windows firewall, because windows firewall by dfault is configured to block echo requests.
+• As a result if you only  rely on this techniques that you  will find yourself missing out on windows hosts that are online but are not responding.
+       
+      
+
+ARP Scanning:
+• This process use the Address Resolution Protocol (ARP) requests to identify hosts. ARP scanning is effective in discovering hosts within the same broadcast domain.
+• To perform this scanning, penetration tester need to be connected to a particular network.
+TCP SYN ping:
+• It involves sending TCP SYN packets to a specific port to check if a host is alive. If the host is alive, it responds with a TCP SYN/ACK flag. Once we receive this flag it responds with RST flag.
+• This techniques is stealthier than ICMP ping.
+UDP ping:
+• It involves sending UDP packets to a specific port to check if a host is alive. This can be effective for hosts that do not respond to ICMP or TCP probes. Usually is utilized for very specific cases.
+TCP ACK ping:
+• It involves sending TCP ACK packets to a specific port to ckeck if a host is alive. If in response we get TCP RST packer then it indicates host is alive.
+SYN/ACK ping:
+• It involves sending TCP SYN/ACK packets to a specific port to check if host is alive. If in response we get TCP RST packet then it indicates host is alive.
+
+May be one question comes in your mind that why we would use multiple techniques? Why these options are available? 
+This choice of the "best" host discovery techiques in penetesting depends on various factor like characteristics of the target network, the security controls in place and that goals of the testing.
+

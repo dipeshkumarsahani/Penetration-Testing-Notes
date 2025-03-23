@@ -1,0 +1,195 @@
+	 Passive Information gathering
+
+Passive Information Gathering:- It invloves gathering as much informationas possible without actively engaging with tagert. Means publicly available or accessible information through OSINT.
+
+What types of information are you looking for?
+• IP Address
+• DNS information
+• Domain Names & Its Ownership
+• Email addresss
+• Social Media Profiles
+• Web Technologies 
+• Subdomain Information
+• And many more if possible
+
+
+Website recon & footprinting
+•In this topic we are going to exploring a process of performaing a passive reconnaissance or passive information gathering on a website.
+
+What is differece between footpronting and recon?
+• Footprinting is same as reconnaissance but the only differece is we are identifying more important that's pertient to a particular target.
+
+Information Like:-
+• IP address
+• Directories hidden form search engines
+• Names 
+• Email addresses
+• Phone numbers
+• Physical addresses
+• Web technologies being used
+
+
+
+
+WEBSITE FOOTPRINTING
+• Website footprinting is a technique used to collect information regarding the target organization's  website. Website footprinting can provide sensitive information associated with the website such as  
+                                    • registered names and addresses of the domain owner
+                                    • domain names
+                                    • host of the sites
+                                    • OS details
+                                    • IP details
+                                    • email
+                                    • filenames, etc..
+
+• By performing website footprinting, you can extract important information related to the target organization's website such as 
+                                    • The software used and the version 
+                                    • operating systemn details
+                                    • filenames
+                                    • paths
+                                    • database field names
+                                    • contact details
+                                    • CMS details 
+                                    • the technology used to build the website
+                                    • scripting plateform, etc..
+
+
+WHOIS FOOTPRINTING
+•As a professional penetration tester,  you should be able to perform whois footprinting on the target .
+• This method provides target domain information such as the owner, its registrar, registration details, name server, contact information etc..
+• Using this information, you can create a map of the organization's network, perform social engineering attacks and obtain internal details of the network.
+• Whois is a query and response protocal used for querying databases that store the registered users or assignees of an internet resource such as a domain name, IP address block, or an autonomous system. 
+• This protocol listens to requests on port 43 (TCP). Regional Internet Registries (RIRs) maintain whois databases and contains the persoanl information of domain owners.
+• Whois database provides text records with information about the resource itself and relevant information assignees, registrants and administrative information (creation and expiration dates).
+
+
+GOOGLE HACKING OR DORKING
+Before starting the google dorking, first of all we need to anwer the folowing questions: 
+• How search engine works?
+• How web crawler crawl the websites?
+• How they indexing the websites?
+• Also we need to understand what is robots.txt file and along with what is sitemap.xml file?
+
+
+
+How search engine works?
+• Search Engine is a complex software porgam that designed to search an information the world wide web and provide the best results in fastest way.
+• To show this information search engine do a lst of background works. So that when you click on search button, you are presented with a set of precise and quality results that answers your questions and queries.
+That background work is divided into three main stages:-
+1. Crawling
+2. Indexing
+3. Ranking
+
+1. What is Crawling?
+Crawler is a software program that are responsible for finding informaton that is publically available on the internet.
+
+These programs scans the web and create a list of all websites.
+They visit each page of the website & scan the whole HTML code and then try to understand: 
+   • Structure of a webpage
+   • Types of content
+   • Meaning of content
+   • When it was created and updated
+How web crawler crawl the websites & How they indexing the websites?
+The diagram below is a high-level abstraction of how these web crawlers work? Once a web crawler discovers a domain such as mywebsite.com, it will index the entire contensts of the doamin, looking for keywords and other miscellaneous information.   
+ 
+
+A user submits a query to the search engine of “Pears". Because the search engine only has the contents of one website that has been crawled with the keyword of “Pears” it will be the only domain that is presented to the user.
+
+
+Crawlers attempt to traverse, termed as crawling, every URL and file that they can find!, but also had a URL to another website “another website.com”, the crawler will then attempt to traverse everything on that URL (anotherwebsite.com) and retrieve the contents of everything within that domain respectively.
+
+
+So to recap, the search engine now has knowledge of two domains that have been crawled:
+1. mywebsite.com
+2. anotherwebsite.com
+
+
+| Domain Name   | Keyword|
+| mywebsite.com | Apples |
+| mywebsite.com | Bananas |
+| mywebsite.com | Pears |
+| anotherwebsite.com | Tomatoes |
+| anotherwebsite.com | Strawberries |
+| anotherwebsite.com | Pineapples |
+
+
+This is how web crawler works on the websites...
+
+
+
+Lets Discuss About Robots.txt
+• This is the hackers first information gathering step, why?
+• What is robots.txt?
+• Why developers keep it with websites?
+• What is the work of this file?
+• Why is so important?
+This file is available in the root directory of domain. It helps web crawler. 
+
+What is site map?
+• A sitemap is a file that lists out the URLs of all the essential pages of your website. The primary purpose is to help search engines understand your site and locate specific pages with ease.
+                  • https://www.example.com/
+                  • https://www.example.com/aboutus
+                  • https://www.example.com/contactus
+                  • https://www.example.com/category1
+                  • https://www.example.com/product1
+                  • https://www.exapmle.com/subcategory
+                  • https://www.example.com/product2
+                
+Types of sitemaps?             
+• HTML Sitemap: for User, so that it can navigate our website smoothly.
+• XML Sitemap: for Crawlers, so that it can understand the extract sturcture of our website.
+    
+             
+What is Google Dorking?             
+• It's made up of two words: Google + Dorking
+• We already covers what google is? It is a search engine & we already covers how search engine works.
+• Dork is basically a query that you search or a query operator. Based on that we get our results. After tunning up our search query, we find some sensitive information as well which is saved  into the server by developers.
+• Google dorking is a black box testing.
+
+
+
+Footprinting through web services
+• Through web services you can extract veriety of information about your target organization. Web services such as social networking sites, people search sercvice, alerting services, & job sites etc. provide information about a target organization.
+• You can extract critical information such as  a target organization's domains, sub-domains, operating systems, geographic locations, emplyee details, emails, financial informationm, infrastructure details, hidden web pages and content etc
+• Using this information, you can build a hacking strategy to break into the target organization's network and can carry out other types of advanced system attacks.
+• Groups, forums and blogs may also provide  sensitive information about a target organization's such as public network infromation and personal information.
+• Internet archives may also provide sensitive information that has heen removed form the World Wide Web (WWW).
+
+
+Footprinting through social networking sites
+• During information gathering, you need to gather personal information about employees working in critical positions in the target organization, for example, the Chief Information Security Officer, Security Architect or Network Administrator.
+• Social networking sites are online services or plateform that allow people to connect and build interpersonal relations.
+• People usually maintain profiles on social networking sites & provides basic information about themselves that help to make and maintain connections with others. The profile generally contains information such as name, contact information (cellphone number, email address), friends information, information about family members, their interests, activities, etc.
+• On social networking sites, people may also post their personal information such as date of birth, education information, employment  backgroud, spouse's name etc.
+• Social networking sites often provide to be valuable information resources. Examples of such sites include Linkdin, Facebook, Instagram, Twitter, Pinterest, YouTube, etc
+• By footprinting through social networking sites, you can extract personal information such as name, position, organization name, current location, and educational qualifications. 
+• You can aslo find professional information such as company or busincess, current location, phone number, email ID, photos, videos, etc
+• The information gathered can be useful to perform social engineering and other types of advaced attacks.
+
+
+Email Harvesting
+• Emails are messaging sources that are very important for performing information exchange and email ID is considered by most people as the personal identification employees or organizations.
+• So, collection of information about email IDs of critical personnel is one of the key tasks of ethical hackers.
+• Why this simple information is so important?
+• Because when we find emails pertinent to a particular target then the attacker could use that email to send a malicious or phishing attachments.
+• In this section, we will gather the list of emails IDs related to a target organization using theHarvester tool.
+• This tools gathers email, subdomain, hosts, employee name, open ports and banners form different public sources such as search engines, PGP key servers and SHODAN computer database as well as uses  Google, Bing, SHODAN, etc to extract valuable information form the target doamin.
+• This tool is intended to help in the early stages of the security assessment to understand the organization's footprint on the internet.
+
+
+Email Footprinting
+• As a professional penetration tester, you need to able to track email of individuals employees from a target organization for gathering critical information that can help in building an effective hacking stratery.
+• E-mail footprinting or tracking is a method to monitor or spy on email delivered to the intended recipient.
+• This kind of tracking is possible digitally time-stamped records that reveal the time and date when the target receives and opens a specific email.
+• Email footprinting reveals information such as
+• Recipient's system IP address
+• The GPS coordinates and map location of the recipient
+• When an email message was received and read
+• Types of server used by the recipient
+• Operating system and browser information
+• If a destructive email was sent
+• The time spent teading the email
+• Whenther or not the recipient visited any kinks sent in this email
+• PDFs and other types of attachments
+• If messages were set to expire after a specified time
+• tool email tracker pro
+
